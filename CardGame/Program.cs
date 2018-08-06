@@ -10,8 +10,12 @@ namespace CardGame
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
-            Console.ReadKey();
+            BlackJack blackjack = new BlackJack();
+
+            while (blackjack.GetGameStatus() == true)
+            {
+                blackjack.Update();
+            }
         }
     }
 }
